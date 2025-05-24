@@ -1,0 +1,161 @@
+
+
+
+.background-image-main {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    height:56.25rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Animation for hero content */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section 1*/
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    height: 100vh;
+    width: 100vw;
+    background-color:#FAF4E0;
+    position:  relative;
+    z-index: 2;
+    
+
+}
+
+.hero-image {
+    width:50rem;
+    height:20rem;    
+    border:solid #000 solid 2rem;
+}
+.hero-tekst {
+    width: 50rem;
+    height: 31.25rem;
+    margin: 6rem; 
+   
+    
+
+}
+
+.hero-tekst p {
+    width:25rem;
+}
+
+.hero-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height:3rem;
+    background-color: #FAF4E0;
+}
+.arrow-down-hero {
+    border: solid #F9C846   ;
+    border-width: 0 0.1rem 0.1rem 0;
+    display: inline-block;
+    padding: 1rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background-color: #FAF4E0;
+  
+}
+
+
+.arrow-down-hero:hover {
+    border: solid #F9C846   ;
+    border-width: 0 0.1rem 0.1rem 0;
+    display: inline-block;
+    padding: 1rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+ 
+    animation: bounce 0.5s infinite alternate;
+}
+
+/* Vingård Section 2 */
+
+.section-vingaarden {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color:#ffffff;
+    opacity: 0.8;
+    position: relative;
+    border:#000 1px solid;  
+
+}
+.section-vingaarden-tekst {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 20rem;
+    margin: 5rem;
+    border:#000 1px solid;
+    padding:1.5rem;
+
+   
+}
+
+.section-vingaarden p {
+    width:25rem;
+    border:#000 1px solid
+}
+
+
+.section-vingaarden-image {
+    border:#000 1px solid; 
+    width:25rem; 
+    height:20rem;
+     padding:1.5rem;
+
+}
+
+/* køb havblink Section 3 */
+
+.section-køb-havblink {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color:#ffffff;
+    opacity: 0.8;
+    position: relative;
+    border:#000 1px solid;  
+}
+
+.section-køb-havblink-image-tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 30rem;
+    margin: 2rem;
+    border:#000 1px solid;
+    padding:1.5rem;
+}

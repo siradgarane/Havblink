@@ -1,0 +1,69 @@
+.site-header nav a:hover {
+    color: #4CAF50;
+}
+
+
+/* Hero Section Styling (Now on <main>) */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Make the hero section take up half the viewport height */
+    overflow: hidden;
+    display: flex; /* NEW: Enable Flexbox */
+    flex-direction: row; /* NEW: Reverse the order (video on right) */
+    justify-content:space-between; /* NEW: Align items to the start (left) */
+    align-items: center;
+    text-align: left; /* Modified: Align text to the left */
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Background Video Styling */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Modified: Take up 50% width */
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    /* Optional: Keep brightness filter or remove if tint is strong enough */
+    filter: brightness(0.8);
+}
+
+/* Video Overlay Styling (for yellow tint) */
+.video-overlay {
+    position: absolute;
+    top: 0;
+     left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 0, 0.2); /* Yellow with 20% transparency */
+    z-index: 0; /* Placed above video (-1) but below content (1) */
+}
+
+
+/* Hero Content Styling */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+    max-width: 40%; /* Modified: Limit the width of the text content */
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+/* Animation for hero content */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
