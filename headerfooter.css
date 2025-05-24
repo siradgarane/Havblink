@@ -1,0 +1,141 @@
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    height:8rem;    
+    align-items: center;
+    top:0;
+    left:0; 
+    /* border-bottom: #333333 solid 2px; */
+    position: fixed;
+    z-index: 1000;
+    background-color: #ffffff;
+    opacity: 98%;
+
+
+    
+ 
+
+}
+
+/* Logo*/
+
+
+.logo {
+    width:10rem; 
+    height: 4rem;
+    margin-left: 1rem;
+    
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding:0.125rem;
+  
+}   
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 1rem;
+    
+}
+
+
+ul li a {
+  position: relative;
+  display: block;
+    padding: 0 20px; 
+    text-decoration: none;
+    color:#000000; 
+    font-size: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+
+
+}
+
+/* Dropdown menu */
+.dropdown {
+  display:none; 
+  position:absolute; 
+  background-color: #ffffff;
+  opacity: 0.;
+  min-width: 12rem;
+  max-width: 12rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+    padding: 0;
+    margin-top: 0; 
+    border-radius: 4px; 
+}
+
+.dropdown li {
+  list-style: none;
+  
+  min-width: 10rem;
+  max-width: 10rem;
+
+} 
+nav li:hover > .dropdown {
+    display: block;
+
+}
+
+/* hoover effekt  */
+
+nav li a::after,
+.dropdown li a::after {
+    content: ''; 
+    position: absolute;
+    width: 0; 
+    height: 1.5px; 
+    background-color: #878585; 
+    left: 50%; 
+    bottom: 0px; 
+    transform: translateX(-50%); 
+    transition: width 0.3s ease-out; 
+}
+
+nav li a:hover::after,
+.dropdown li a:hover::after { 
+    width: calc(100% - 40px)
+
+}
+
+
+
+/* Arrow */ 
+
+.arrow {
+    border: solid #333333;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+
+  }
+
+  
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-left:0.5rem
+  }
+
+  /* FOOTER */
