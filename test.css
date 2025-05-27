@@ -1,0 +1,114 @@
+/* Section 1 - proces intro */
+
+.section-1-proces-intro {
+   
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    width: 100%;
+    height:50rem; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+    
+
+}
+
+.proces-tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;  
+    padding:2rem; 
+   line-height: 2;
+    z-index: 1;
+    position: relative;
+    color:#FCDD60;  
+    width:25rem; 
+    height:25rem;
+
+
+}
+
+.proces-tekst {
+    animation: fadeInSlideUp 1s ease-out forwards;
+    animation-delay: 0.5s; /* Starts after 0.5 seconds */
+    opacity: 0.9;
+    
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.proces-image {
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%;
+    height:100%;
+    object-fit: cover;  
+    z-index: -1;
+    
+
+}
+
+.proces-image img {
+    width:100%; 
+    height:100%;  
+    object-fit:cover;
+    
+}
+
+.proces-tekst h3 {
+    text-decoration: underline;
+    text-decoration-thickness: 1px; 
+    text-decoration-color: #ccc; 
+    text-underline-offset: 2px;
+}
+
+.proces-tekst h1,
+.proces-tekst h3 {
+    margin-bottom: 0.3rem; /* or a value you prefer */
+}
+
+.proces-tekst h1 {
+    margin-bottom: 0.2rem; /* even less space below h1 */
+}
+
+.proces-tekst h3 {
+    margin-top: 0; /* remove space above h3 */
+}
+
+
+/* SECTION 2 - STEPS  */
+
+
+.process-row-container {
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:100%;
+    height: 900px;
+}
+
+.process-row-container img {
+    width:50%;
+    height: 100%;
+    
+}
+.section-2-process-tekst {
+   
+    width:50%;
+    height: 100%;
+
+}
