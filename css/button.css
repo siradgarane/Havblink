@@ -1,0 +1,32 @@
+.read-more-button {
+    display: flex;
+    justify-content: center;
+    gap:0.5rem; 
+    align-items: center;
+    width:8rem; 
+    background-color: #FAF4E0;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:600;
+    font-style: normal;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem; 
+    border-radius: 3.1rem; 
+    font-size: 0.9rem; 
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.read-more-button:hover {
+    background-color: #FDF27A;
+    transform: translateY(-0.0625rem);
+    border:none; 
+}
+
+.read-more-button:active {
+    background-color: #FDF27A;
+    transform: translateY(0);
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+}

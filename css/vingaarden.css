@@ -1,0 +1,25 @@
+.hero-section {
+    position: relative; /* Essential for positioning the video */
+    width: 100%;
+    height: 100vh; /* Make the hero section take up the full viewport height */
+    overflow: hidden; /* Hide any overflow from the video */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Text color for content over video */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add a stronger shadow for separation */
+}
+
+/* Background Video Styling */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This is key for responsiveness and coverage */
+    z-index: -1; /* Puts the video behind the content */
+    filter: sepia(0.5) brightness(0.7); 
+}
+    

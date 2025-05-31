@@ -1,0 +1,175 @@
+
+.hero-section {
+    position: relative; 
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    color: white; 
+   box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
+    
+
+}
+
+/* Bagground Video */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+    filter: sepia(0.5) brightness(0.7); 
+}
+
+.hero-content {
+
+    text-align: left; 
+    margin-left:10rem;      
+    width:50rem; 
+    height:50rem; 
+
+}
+.hero-content h1 {
+    color: #FAF4E0;
+}
+
+.hero-content p {
+    color: #FAF4E0;
+    width:25rem; 
+    height:25rem; 
+}
+.background-image-main {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height:56.25rem;
+    position: relative;
+    z-index: 1;
+}
+.hero-content {
+    animation: fadeInSlideUp 1s ease-out forwards;
+    animation-delay: 0.5s; /* Starts after 0.5 seconds */
+    opacity: 0.9;
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Vingård Section 2 */
+
+.section-vingaarden {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    height: 100vh;
+    width: 100%;
+    background-color:#FAF4E0;
+    box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
+     
+   
+
+}
+.section-vingaarden-tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: leff;
+    justify-content: center;
+    width:50%; 
+    height:100%; 
+    padding-left:5rem; 
+    padding-right:5rem; 
+    line-height: 1.7;
+        
+    
+
+   
+}
+
+
+
+.section-vingaarden p {
+    width:25rem;
+    text-align: left;
+}
+
+
+.section-vingaarden-image {
+    
+    width:50%; 
+    height:50%; 
+     margin: 5rem; 
+     padding:1.5rem; 
+     
+     
+     /* border: solid black 2px; */
+
+}
+.section-vingaarden-image img {
+box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
+
+}
+/* køb havblink Section 3 */
+
+.section-køb-havblink {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh AUTO;
+    width: 100%;
+    background-color:#ffffff;
+    opacity: 0.8;
+    box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
+
+}
+
+.køb-habblink-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:25rem; 
+    height:45rem; 
+    margin:2rem; 
+   box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.køb-habblink-container:hover {
+    transform: scale(1.03); /* Slightly enlarge the container */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* More prominent shadow */
+}
+.køb-habblink-container img {
+    width:15rem; 
+    height:rem auto; 
+    margin:0 auto; 
+   
+}
+.section-køb-havblink-image-tekst {
+    text-align: center;
+    align-items: center;
+    width: 15rem;
+    height: 8rem;
+
+
+    
+}
+
