@@ -153,7 +153,6 @@ footer {
 
 .tilmeld {
   padding:10px; 
- 
   display:flex; 
   flex-direction: column;
 
@@ -169,7 +168,9 @@ footer {
 .tilmeld input {
   
   width: 20rem; 
-  height:1rem; 
+  height:2.5rem; 
+  
+  
 }
 
 .section-footer-containers {
@@ -190,7 +191,10 @@ padding: 12px 24px;
 justify-content: center;
 align-items: center;
 gap: 8px;
-color:#333333
+color:#333333;
+background-color: #fff;
+border: solid black 0.5px; 
+border-radius: 1px;
 }
 
 
