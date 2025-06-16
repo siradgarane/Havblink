@@ -1,25 +1,132 @@
-.hero-section {
-    position: relative; /* Essential for positioning the video */
+.vingaard-section-1 {
+    position: relative; 
     width: 100%;
-    height: 100vh; /* Make the hero section take up the full viewport height */
-    overflow: hidden; /* Hide any overflow from the video */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white; /* Text color for content over video */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add a stronger shadow for separation */
+    height: 100vh; 
+    overflow: hidden; 
+    color: white; 
+    box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
 }
 
-/* Background Video Styling */
-.background-video {
-    position: absolute;
+.vingaard-header-img {
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This is key for responsiveness and coverage */
-    z-index: -1; /* Puts the video behind the content */
+    object-fit: cover; 
+    z-index: -1;
     filter: sepia(0.5) brightness(0.7); 
-}
     
+}
+
+
+.vingaard-section-1-indhold {
+
+    text-align: left; 
+    margin-left:10rem;      
+    width:25rem; 
+    height:25rem;
+  
+    margin-top: 5rem;     
+
+}
+
+
+
+.vingaard-section-1-indhold h1 {
+    color:#FAF4E0; 
+   
+  padding:1.2rem;   
+
+}
+
+.vingaard-section-1-indhold p {
+   color: #FAF4E0;
+    width:25rem; 
+    height:10rem;
+    padding:1.2rem;  
+
+}
+
+.vingaard-section-2 {
+    width:100%; 
+    height:100vh;
+    background-color:#FAF4E0; 
+    position: relative; 
+     box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
+
+
+
+}
+
+
+.vingaard-section-2  {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    text-align: left;
+    width: 100%;
+    height:50rem; 
+    margin:0; 
+
+}
+
+.vingaard-section-2-indhold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    padding:2rem; 
+    line-height: 2;
+    z-index: 1;
+    position: relative;
+    color:#333;  
+    width:30rem; 
+    height:30rem;   
+    border: solid 0.1px #FAF4E0; 
+    gap: 2rem; 
+
+}
+ 
+
+.vingaard-section-2-indhold h3 {
+    font-weight:800; 
+}
+
+.vingaard-section-3 {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    padding:5rem;  
+    box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
+}
+
+.section-3-indhold-container {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3-indhold-container img {
+    width: 32rem; 
+    height: 17.5rem; 
+    align-items: center;
+}
+
+.section-3-indhold-container p {
+    width: 20rem; 
+    height: 5rem; 
+}
+
+.section-3-indhold-container h3 {
+   
+    text-align: center;
+    padding: 1.2rem; 
+}
+
+
+
+
