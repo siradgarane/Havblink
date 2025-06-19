@@ -1,4 +1,4 @@
-.vingaard-section-1 {
+.hero-section-1 {
     position: relative; 
     width: 100%;
     height: 100vh; 
@@ -7,7 +7,7 @@
     box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
 }
 
-.vingaard-header-img {
+.hero-section-1-img{
     position: absolute; 
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@
 }
 
 
-.vingaard-section-1-indhold {
+.hero-section-1-indhold{
 
     text-align: left; 
     margin-left:10rem;      
@@ -33,14 +33,14 @@
 
 
 
-.vingaard-section-1-indhold h1 {
+.hero-section-1-indhold h1{
     color:#FAF4E0; 
    
   padding:1.2rem;   
 
 }
 
-.vingaard-section-1-indhold p {
+.hero-section-1-indhold     p {
    color: #FAF4E0;
     width:25rem; 
     height:10rem;
@@ -108,6 +108,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1rem;
+     box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
 }
 
 .section-3-indhold-container img {
@@ -126,7 +128,6 @@
     text-align: center;
     padding: 1.2rem; 
 }
-
 
 
 
