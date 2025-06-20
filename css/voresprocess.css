@@ -1,16 +1,16 @@
 
-
 /* Section 1 - proces intro */
 
 .section-1-proces-intro {
    
     display: flex;
-    align-items: center;
+    align-items: center   ;
     justify-content: center;  
     text-align: left;
     width: 100%;
-    height:50rem; 
+    height:100vh; 
     margin:0; 
+    position: relative;
 
     
 
@@ -19,23 +19,42 @@
 .proces-tekst {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: center;  
     padding:2rem; 
     line-height: 2;
     z-index: 1;
-    position: relative;
-    color:#FCDD60;  
+    color:#2F2F2F ;  
     width:25rem; 
     height:25rem;   
     border: solid 0.1px #FAF4E0; 
-
+    background-color: #FAF4E080;
+     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 
 }
 
+
 .proces-tekst {
     animation: fadeInSlideUp 1s ease-out forwards;
-    animation-delay: 0.5s; /* Starts after 0.5 seconds */
+    animation-delay: 0.5s; 
+    opacity: 0.9;
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.proces-tekst {
+    animation: fadeInSlideUp 1s ease-out forwards;
+    animation-delay: 0.5s; 
     opacity: 0.9;
     
 }
@@ -77,21 +96,21 @@
 .proces-tekst h3 {
     text-decoration: underline;
     text-decoration-thickness: 1px; 
-    text-decoration-color: #ccc; 
+    text-decoration-color: #333; 
     text-underline-offset: 2px;
 }
 
 .proces-tekst h1,
 .proces-tekst h3 {
-    margin-bottom: 0.3rem; /* or a value you prefer */
+    margin-bottom: 0.3rem; 
 }
 
 .proces-tekst h1 {
-    margin-bottom: 0.2rem; /* even less space below h1 */
+    margin-bottom: 0.2rem; 
 }
 
 .proces-tekst h3 {
-    margin-top: 0; /* remove space above h3 */
+    margin-top: 0; 
 }
 
 /* SECTION 2 - STEPS  */

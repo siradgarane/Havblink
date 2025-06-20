@@ -33,6 +33,16 @@ h3 {
 
 }
 
+h4 {
+
+     font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.1rem
+
+}
+
 
 p {
 

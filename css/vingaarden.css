@@ -31,6 +31,23 @@
 
 }
 
+.hero-section-1-indhold {
+    animation: fadeInSlideUp 1s ease-out forwards;
+    animation-delay: 0.5s; /* Starts after 0.5 seconds */
+    opacity: 0.9;
+}
+
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 
 
 .hero-section-1-indhold h1{
