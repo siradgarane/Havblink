@@ -276,14 +276,3 @@ border-radius: 0.2rem;
   color:#000000; 
 
 }
-
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) { /* Adjust breakpoint as needed */
-    nav {
-        display: none; /* Hide regular nav links */
-    }
-
-    .burger-menu {
-        display: block; /* Show burger menu */
-    }
-}
