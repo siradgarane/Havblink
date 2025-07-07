@@ -54,3 +54,89 @@ p {
 
 }
 
+
+#kurv {
+    background:yellow; 
+    color:black; 
+    padding:0.8rem; 
+    text-decoration: none !important
+}
+
+.burger-icon span {
+    display:none; 
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+/* Media quries for burger menu */
+
+
+@media (max-width:768px) {
+  
+    /* navigation */ 
+
+nav {
+    display:none; 
+}
+   
+nav.open {
+        display: block !important;
+    }
+nav li {
+    width:100%;; 
+}
+
+/* burger menu */
+
+.burger-icon {
+    display:flex !important; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top:1rem; 
+    right:1rem;
+    z-index: 2000;
+    cursor: pointer; 
+    width:40px;
+    height:40px; 
+}
+
+.burger-icon span {
+    display:block !important; 
+}
+
+nav  {
+    display:none; 
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position:absolute; 
+    top:60px; 
+    right:0; 
+    background:#fff;
+    opacity: 95%;
+    box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
+
+}
+
+/* Footer for mobil enheder*/
+
+
+footer {
+    flex-wrap: wrap; 
+    max-height:50rem; 
+
+}
+
+footer .tilmeld {
+    display:none; 
+}
+    
+}

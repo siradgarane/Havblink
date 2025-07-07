@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="burger-menu-test.css">
+    <link rel="stylesheet" href="css/headerfooter.css">
+</head>
+<body>
+
+     <header class="header-main">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo 2.svg"></a>
+        </div>
+
+        <!-- Burger menu icon -->
+
+        <div class="burger-icon" id="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <!-- burger menu  -->
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                
+                <li><a href="voresdruer.html">Vores Druer <i class="arrow down"></i></a>
+                    <ul class="dropdown">
+                         <li><a href="voresprocess.html">Vores Proces</a></li>
+                    </ul>
+
+                </li>
+                        
+                    
+                <li><a href="voreshistorie.html">Vores Historie </a></li>
+                    
+                <li><a href="vingaarden.html">Vingården <i class="arrow down"></i></a></li>
+                <li><a href="køb-havblink.html">Køb Havblink</a></li>
+                <li><a href="inspiration.html">Inspiration <i class="arrow down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="madparringer.html">Madparringer </a></li>
+                    </ul>
+                    
+                </li>
+                <li><a href="kontakt.html">Kontakt os </a></li>
+            </ul>   
+            
+        </nav>
+
+<script>
+document.querySelector('.burger-icon').onclick = function() {
+  document.getElementById('nav').classList.toggle('open');
+};
+</script>
+    
+</body>
+</html>

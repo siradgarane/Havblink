@@ -8,15 +8,14 @@
     <link rel="icon" type="image/png" href="images/favicon.svg">    
     <!-- Header and footer css for ALLE--->
     <link rel="stylesheet" href="css/headerfooter.css">
+    <!-- media quries for ALLE-->
+     <link rel="stylesheet" href="css/media-queries.css">
     <!-- general css for ALLE-->
     <link rel="stylesheet" href="css/general.css">
      <!-- button css for ALLE-->
     <link rel="stylesheet" href="css/button.css">
     <!-- main css KUN FOR INDEX-->
     <link rel="stylesheet" href="css/main.css">
-
-        <!-- media quries for ALLE-->
-     <link rel="stylesheet" href="css/media-queries.css">
 
        <link rel="stylesheet" href="burger-menu-test.css">
 
@@ -36,25 +35,33 @@
             <a href="index.html"><img src="images/logo 2.svg"></a>
         </div>
 
-    <!-- Navigation bar -->
-        <nav>
+        <!-- Burger menu icon -->
+
+         <div class="burger-icon" id="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <!-- Navigations bar -->
+
+        <nav id="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                    
-                <li><a href="voreshistorie.html">Vores Historie <i class="arrow down"></i></a>
+
+                
+                <li><a href="voresdruer.html">Vores Druer <i class="arrow down"></i></a>
                     <ul class="dropdown">
-                        <li><a href="voresdruer.html">Vores Druer</a></li>
-                        <li><a href="voresprocess.html">Vores Proces</a></li>
+                         <li><a href="voresprocess.html">Vores Proces</a></li>
                     </ul>
+
                 </li>
+                        
                     
+                <li><a href="voreshistorie.html">Vores Historie </a></li>
                     
-                <li><a href="vingaarden.html">Vingården <i class="arrow down"></i></a>
-                    <ul class="dropdown">
-                        <li><a href="besøgos.html">Besøg os</a></li>
-                        <li><a href="book.html">Book</a></li>
-                    </ul>
-                </li>
+                <li><a href="vingaarden.html">Vingården <i class="arrow down"></i></a></li>
                 <li><a href="køb-havblink.html">Køb Havblink</a></li>
                 <li><a href="inspiration.html">Inspiration <i class="arrow down"></i></a>
                     <ul class="dropdown">
@@ -64,7 +71,10 @@
                 </li>
                 <li><a href="kontakt.html">Kontakt os </a></li>
             </ul>   
+            
         </nav>
+
+
 
       
 
@@ -242,6 +252,12 @@
         
        
     </section>
-</footer>    
+</footer>  
+
+<script>
+document.querySelector('.burger-icon').onclick = function() {
+  document.getElementById('nav').classList.toggle('open');
+};
+</script>
 </body>
 </html>
