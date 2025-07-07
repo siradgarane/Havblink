@@ -34,10 +34,9 @@
         <!-- Burger menu icon -->
 
          <div class="burger-icon" id="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
         </div>
 
         <!-- Navigations bar -->
@@ -234,12 +233,15 @@
     </section>
 </footer>  
 
-<!-- Javascript -->
+<!-- Javascript for burger menu-->
 
 <script>
 document.querySelector('.burger-icon').onclick = function() {
   document.getElementById('nav').classList.toggle('open');
 };
+burger-icon.addEventListener('click', function() {
+    burger-icon.classList.toggle('active');  // Adds/removes 'active' class
+});
 </script>
 </body>
 </html>

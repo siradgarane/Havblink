@@ -28,32 +28,35 @@
         <div class="logo">
             <a href="index.html"><img src="images/logo 2.svg"></a>
         </div>
-        <nav>
+       
+
+        <!-- Burger menu icon -->
+
+         <div class="burger-icon" id="burger-icon">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </div>
+
+        <!-- Navigations bar -->
+
+        <nav id="nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                    
-                <li><a href="voreshistorie.html">Vores Historie <i class="arrow down"></i></a>
+                <li><a href="voresdruer.html">Vores Druer <i class="arrow down"></i></a>
                     <ul class="dropdown">
-                        <li><a href="voresdruer.html">Vores Druer</a></li>
-                        <li><a href="voresprocess.html">Vores Proces</a></li>
+                         <li><a href="voresprocess.html">Vores Proces</a></li>
                     </ul>
-                </li>
-                    
-                    
-                <li><a href="vingaarden.html">Vingården <i class="arrow down"></i></a>
-                    <ul class="dropdown">
-                        <li><a href="besøgos.html">Besøg os</a></li>
-                        <li><a href="book.html">Book</a></li>
-                    </ul>
-                </li>
+                </li>                    
+                <li><a href="voreshistorie.html">Vores Historie </a></li>                    
+                <li><a href="vingaarden.html">Vingården <i class="arrow down"></i></a></li>
                 <li><a href="køb-havblink.html">Køb Havblink</a></li>
-                <li><a href="inspiration.html">Inspiration<i class="arrow down"></i></a>
+                <li><a href="inspiration.html">Inspiration <i class="arrow down"></i></a>
                     <ul class="dropdown">
                         <li><a href="madparringer.html">Madparringer </a></li>
                     </ul>
-                    
                 </li>
                 <li><a href="kontakt.html">Kontakt os </a></li>
+                <li><a id="kurv" href="#">Kurv</a></li>
             </ul>   
         </nav>
     </header>
@@ -76,7 +79,7 @@
 
           <section class="section-2-container">
             
-            <!-- Step 1 -->
+            
             <div class="process-row-container">
                 <img src="images/voresdruer-section2.png"> 
                 <div class="section-2-process-tekst">
@@ -202,6 +205,15 @@
         
        
     </section>
-</footer>    
+</footer>
+<!-- Javascript for burger menu-->
+<script>
+document.querySelector('.burger-icon').onclick = function() {
+  document.getElementById('nav').classList.toggle('open');
+};
+burger-icon.addEventListener('click', function() {
+    burger-icon.classList.toggle('active');  // Adds/removes 'active' class
+});
+</script>    
 </body>
 </html>
