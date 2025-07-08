@@ -2,6 +2,8 @@
 
 .hero-section-1 {
     position: relative; 
+    display:flex; 
+    flex-wrap: wrap;
     width: 100%;
     height: 100vh; 
     overflow: hidden; 
@@ -25,11 +27,12 @@
 
 .hero-section-1-indhold{
 
+    display:flex;
+    flex-wrap:wrap; 
     text-align: left; 
     margin-left:10rem;      
     width:25rem; 
     height:25rem;
-  
     margin-top: 5rem;     
 
 }
@@ -39,7 +42,7 @@
 .hero-section-1-indhold h1{
     color:#FAF4E0; 
    
-  padding:1.2rem;   
+   
 
 }
 
@@ -211,3 +214,28 @@
     width: calc(100% - 30px); 
 }
 
+
+
+@media (max-width:768px) {
+    .hero-section-1-indhold {
+        margin-left: 0;
+        flex-wrap:wrap;
+        padding:1rem; 
+    }
+    .hero-section-1-indhold h1 {
+        font-size: 2rem;
+        
+    }
+
+    .section-2 h2 {
+
+        font-size: 1.5rem;
+        
+
+    }
+
+    .køb-habblink-container img {
+        width:100%; 
+        height:100vh; 
+    }
+}

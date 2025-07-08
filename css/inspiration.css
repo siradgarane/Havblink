@@ -1,0 +1,139 @@
+.section-1-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:60px; 
+    flex-wrap: wrap;
+    width:100%; 
+    height:100vh; 
+
+    
+
+    
+
+}
+.section-1-main-container h1 {
+    width:auto; 
+    height:auto; 
+
+     
+
+}
+
+.section-1-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:100vh; 
+    
+
+}
+
+/* column 1 */
+
+.column-1-container{
+    display: flex;
+    flex-direction: column;
+    width:auto;  
+    height: 100vh;
+    gap:1.5rem;
+     
+}
+
+.column-1-indhold{
+     display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    
+}
+
+.column-1-img {
+
+    width: 470px;; 
+    height:50%; 
+
+}
+
+/* column 2 */
+
+.column-2-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:50%; 
+    height: 100vh; 
+    gap:1.5rem;
+   
+ 
+}
+
+.column-2-indhold{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:auto; 
+    height: auto;
+   gap:1.5rem; 
+}
+.column-2-img {
+    width:50%; 
+    
+}
+.column-2-indhold-tekst {
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem; 
+
+}
+
+
+@media (max-width: 768px) {
+    .section-1-main-container {
+        padding: 1rem;
+        gap:0; 
+        margin:0 auto; 
+    }
+    .section-1-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .column-1-container,
+    .column-2-container {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .column-1-img {
+        width: 100%;
+        max-width: 500px;   /* slightly bigger than column-2-img */
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .column-2-img {
+        width: 90vw;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .column-1-indhold,
+    .column-2-indhold,
+    .column-2-indhold-tekst {
+        font-size: 0.95rem;
+        
+        
+    }
+    h1 {
+        font-size: 2.5rem
+    }
+    
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    .read-more-button {
+        font-size: 0.95rem;
+        
+    }
+}
