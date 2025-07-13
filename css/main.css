@@ -152,8 +152,8 @@ box-shadow: 0 5px 15px rgba(90, 85, 70, 0.3);
 
 
 .køb-habblink-container:hover {
-        transform: scale(1.03); /* Slightly enlarge the container */
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* More prominent shadow */
+        transform: scale(1.03); 
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); 
 }
 .køb-habblink-container img {
     width:15rem; 
